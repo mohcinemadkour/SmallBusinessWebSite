@@ -4,12 +4,16 @@ let currentWordIndex = 0;
 const rotatingWordElement = document.getElementById('rotatingWord');
 
 function rotateWord() {
-    currentWordIndex = (currentWordIndex + 1) % rotatingWords.length;
-    rotatingWordElement.textContent = rotatingWords[currentWordIndex];
+    if (rotatingWordElement) {
+        currentWordIndex = (currentWordIndex + 1) % rotatingWords.length;
+        rotatingWordElement.textContent = rotatingWords[currentWordIndex];
+    }
 }
 
 // Change word every 4 seconds
-setInterval(rotateWord, 4000);
+if (rotatingWordElement) {
+    setInterval(rotateWord, 4000);
+}
 
 // FAQ Accordion functionality
 const faqQuestions = document.querySelectorAll('.faq-question');
