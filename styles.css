@@ -90,6 +90,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 .nav-dropdown .nav-link::after {
@@ -116,7 +117,7 @@ body {
     display: none;
     flex-direction: column;
     z-index: 1000;
-    margin-top: 8px;
+    margin-top: 0;
 }
 
 .nav-dropdown:hover .dropdown-menu {
