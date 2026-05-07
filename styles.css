@@ -119,10 +119,14 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #b8d8f5 0%, #d4b8f5 50%, #e8b8f5 100%);
-    padding: 100px 0 150px;
+    min-height: calc(100vh - 80px);
+    padding: 80px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero::before {
