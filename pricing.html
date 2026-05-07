@@ -6,67 +6,15 @@
     <title>Pricing | Anthromind</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .pricing-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 50px;
-        }
-        .pricing-card {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            border: 2px solid #e0e0e0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        .pricing-card:hover {
-            border-color: #5a9cff;
-            box-shadow: 0 8px 25px rgba(90, 156, 255, 0.15);
-            transform: translateY(-5px);
-        }
-        .pricing-card.featured {
-            border-color: #5a9cff;
-            transform: scale(1.05);
-        }
-        .pricing-card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #2d2d2d;
-        }
-        .price {
-            font-size: 48px;
-            font-weight: 700;
-            color: #5a9cff;
-            margin: 20px 0;
-        }
-        .price-period {
-            color: #5a6b7a;
-            font-size: 16px;
-        }
-        .pricing-features {
-            list-style: none;
-            margin: 30px 0;
-            text-align: left;
-        }
-        .pricing-features li {
-            padding: 10px 0;
-            border-bottom: 1px solid #e0e0e0;
-            color: #5a6b7a;
-        }
-        .pricing-features li:before {
-            content: "✓ ";
-            color: #5a9cff;
-            font-weight: bold;
-            margin-right: 10px;
-        }
         @media (max-width: 900px) {
-            .pricing-cards {
-                grid-template-columns: 1fr;
+            main > section {
+                padding: 60px 20px !important;
             }
-            .pricing-card.featured {
-                transform: scale(1);
+            main > section > div {
+                display: block !important;
+            }
+            main > section > div > div:first-child {
+                margin-bottom: 40px;
             }
         }
     </style>
@@ -99,130 +47,56 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-title">
-                        <span class="hero-main">Transparent Pricing</span>
-                        <span class="hero-sub">No hidden fees, no contracts</span>
-                    </div>
-                    <p class="hero-description">Pay only for what you use. Scale from small projects to enterprise deployments.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- Pricing Section -->
-        <section class="features">
-            <div class="container">
-                <h2 class="section-title">Simple, Transparent Pricing</h2>
-                <div class="pricing-cards">
-                    <div class="pricing-card">
-                        <h3>Starter</h3>
-                        <div class="price">Custom</div>
-                        <p class="price-period">Based on project scope</p>
-                        <ul class="pricing-features">
-                            <li>Up to 10,000 data points</li>
-                            <li>Basic evaluation</li>
-                            <li>Email support</li>
-                            <li>Standard turnaround (2-3 weeks)</li>
-                        </ul>
-                        <a href="sign-up.html" class="cta-button" style="width: 100%; text-align: center; display: inline-block;">Get Started</a>
+        <section style="background-color: white; padding: 80px 20px; min-height: calc(100vh - 100px); display: flex; align-items: center;">
+            <div class="container" style="max-width: 1200px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <!-- Left Side: Title and Description -->
+                    <div>
+                        <h1 style="font-size: 48px; font-weight: 700; color: #2d2d2d; margin-bottom: 30px;">Pricing</h1>
+                        <p style="font-size: 18px; color: #5a6b7a; line-height: 1.8; margin-bottom: 0;">
+                            We help teams which need large-scale, fully managed data curation with guaranteed SLAs. We will collaborate with you to develop guidelines, assemble dedicated expert teams, and ensure end-to-end quality control.
+                        </p>
                     </div>
-                    <div class="pricing-card featured">
-                        <h3>Professional</h3>
-                        <div class="price">Custom</div>
-                        <p class="price-period">Based on project scope</p>
-                        <ul class="pricing-features">
-                            <li>Up to 100,000 data points</li>
-                            <li>Advanced evaluation</li>
-                            <li>Priority support</li>
-                            <li>Expedited turnaround (1-2 weeks)</li>
-                            <li>Custom methodology</li>
+
+                    <!-- Right Side: Featured Service Card -->
+                    <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); border: 2px solid #e0e0e0;">
+                        <h3 style="font-size: 24px; font-weight: 600; color: #2d2d2d; margin-bottom: 30px;">Managed Service At Scale</h3>
+                        
+                        <ul style="list-style: none; margin: 0; padding: 0;">
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>Guideline and Task Design Assistance</span>
+                            </li>
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>Comprehensive Gold Standards and quality controls</span>
+                            </li>
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>WYSIWYG editor to build your own labeling templates</span>
+                            </li>
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>API Integration</span>
+                            </li>
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>Custom Data Teams</span>
+                            </li>
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>Dedicated Project Manager and Slack Channel</span>
+                            </li>
+                            <li style="padding: 12px 0; color: #5a6b7a; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: #5a9cff; font-weight: bold; flex-shrink: 0; margin-top: 2px;">✓</span>
+                                <span>...and much more.</span>
+                            </li>
                         </ul>
-                        <a href="sign-up.html" class="cta-button" style="width: 100%; text-align: center; display: inline-block;">Get Started</a>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>Enterprise</h3>
-                        <div class="price">Custom</div>
-                        <p class="price-period">Contact sales</p>
-                        <ul class="pricing-features">
-                            <li>Unlimited data points</li>
-                            <li>Expert-in-the-loop evaluation</li>
-                            <li>Dedicated account manager</li>
-                            <li>Custom SLA</li>
-                            <li>Integration support</li>
-                        </ul>
-                        <a href="sign-up.html" class="cta-button" style="width: 100%; text-align: center; display: inline-block;">Contact Sales</a>
+
+                        <a href="sign-up.html" class="cta-button" style="margin-top: 30px; display: inline-block;">Start now</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq">
-            <div class="container">
-                <h2>Pricing FAQ</h2>
-                <p class="faq-subtitle">Have questions about our pricing? We've got answers.</p>
-                
-                <div class="faq-items">
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>How is pricing calculated?</span>
-                            <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Pricing is based on the complexity and volume of your project. After an initial consultation, we provide a transparent quote before any work begins.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Are there minimum contracts?</span>
-                            <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No. We have no minimum contract value. You can start with a small pilot project and scale up as you see results.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>What payment methods do you accept?</span>
-                            <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>We accept all major credit cards, bank transfers, and can arrange custom payment terms for enterprise customers.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Do you offer discounts for long-term commitments?</span>
-                            <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes! Customers who commit to ongoing partnerships can receive volume discounts and special pricing arrangements.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="intelligence">
-            <div class="container">
-                <h2>Ready to Get Started?</h2>
-                <p>Talk to our team about finding the perfect plan for your needs.</p>
-                <a href="sign-up.html" class="cta-button" style="margin-top: 30px;">Schedule a Demo</a>
             </div>
         </section>
     </main>
